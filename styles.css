@@ -1,0 +1,581 @@
+/* Default (Desktop) Layout */
+.imageTopRight img{
+    position: fixed;
+    right: 0px; 
+    top: -20px;
+    width: 15%;
+    height: 25%;
+}
+html{
+    background-color: rgb(230, 230, 230);
+}
+a{
+    border: 2px #800B3D dotted;
+}
+.pageTitle > h1{
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    margin: 20px;
+    margin-top: 100px;
+    color: blueviolet;
+    text-shadow: 10px 10px rgb(0, 0, 0);
+    
+}
+.pageTitle p{
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 25px;
+    color: purple;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+}
+.navBar {
+    display: flex;
+    background-color: lightblue;
+    border: 1px purple solid;
+    padding: 5px; 
+    justify-content: space-around;
+ }
+.navBar a{
+    flex: 0 1 33%;
+    padding:10px 100px;
+    border: 1px purple solid;
+    text-decoration:none;
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    
+}
+.navBar a .visiting{
+    background-color: darkcyan;
+}
+.footer {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: #800B3D;
+    border: 1px purple solid;
+    padding: 5px; 
+    justify-content: space-around;
+}
+.footer h2{
+    flex: 0 1 33%;
+    padding:10px 50px;
+    text-decoration:none;
+    font-family: Impact, sans-serif;
+    font-weight: lighter; 
+}
+table.lists ol{
+    font-size: larger;
+    background-color: rgba(250, 255, 252, 0.678);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*.top5{
+    background-color: black;
+    color: azure;
+}
+td.movies {
+    background-image: url("legomovie.png");
+    width: 25vw;
+}
+td.games {
+    background-image: url("minecraft.png");
+    width: 25vw;
+}
+td.artists {
+    background-image: url("twikipedia.png");
+    width: 25vw;
+}
+td.food {
+    background-image: url("spaghetti.png");
+    width: 25vw;
+}
+div.TTTTTT {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 15% 20% 30% 20%;
+    gap: 3px;
+    border: 5px rgb(7, 4, 34) dashed;
+    grid-template-areas: 
+    "title title"
+    "paraOne paraTwo"
+    "imgOne imgTwo"
+    "ulOne paraThree"
+    ;
+}
+div.TTTTTT p{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 15px;
+}
+div.TTTTTT p ~ p{
+    padding: 40px;
+}
+div.TTTTTT > ul{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 50px;
+    border-radius: 15px;
+}
+div.TTTTTT h2.title{
+    grid-area: title;
+    background: rgb(8, 117, 90);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+}
+div.TTTTTT p.p1{
+    grid-area: paraOne;
+    background: rgb(7, 143, 132);
+}
+div.TTTTTT p.p2{
+    grid-area: paraTwo;
+    background: rgb(0, 139, 2);
+}
+div.TTTTTT p.p3{
+    grid-area: paraThree;
+    background: rgb(83, 24, 106);
+}
+div.TTTTTT img{
+    border-radius: 15px;
+    padding:1px;
+    margin: 1px;
+}
+img.img1{
+    grid-area: imgOne;
+    background: darkcyan;
+    width: 100%;
+    height: 100%;  
+}
+img.img2{
+    grid-area: imgTwo;
+    background: darkcyan;
+    width: 100%;
+    height: 100%;
+}
+ul.ul1{
+    grid-area: ulOne;
+    background: rgb(176, 77, 108);
+}
+div.music {
+    display: grid;
+    grid-template-columns: 30% 40% auto;
+    grid-template-rows: auto 30% 30vw;
+    gap: 3px;
+    border: 5px rgb(7, 4, 34) dashed;
+    grid-template-areas: 
+    "title title title"
+    "paraOne paraOne audioOne"
+    "paraTwo paraThree videoOne"
+    ;
+}
+div.music h2.title{
+    grid-area: title;
+    background: rgb(8, 117, 90);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+}
+div.music p.p1{
+    grid-area: paraOne;
+    background: rgb(7, 143, 132);
+}
+div.music p.p2{
+    grid-area: paraTwo;
+    background: rgb(0, 139, 2);
+}
+div.music p.p3{
+    grid-area: paraThree;
+    background: rgb(83, 24, 106);
+}
+.audio1 {
+    grid-area: audioOne;
+    background: rgb(83, 24, 106);
+    width: 100%;
+    height: 100%;
+}
+.video1{
+    grid-area: videoOne;
+    background: rgb(83, 24, 106);
+    width: 100%;
+    height: 100%;
+}
+div.music p{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 30px;
+}
+table.mainTable{
+    border: 5px rgb(12, 5, 149) solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: black;
+}
+table.mainTable tr{
+    background-color: rgb(215, 116, 207);
+}
+table.mainTable tr td{
+    border: 5px rgb(149, 5, 5) solid;
+    text-shadow: 1px 1px blue;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+table.mainTable tr td img{
+    border-radius: 15px;
+    padding:1px;
+    margin: 1px;
+}
+span.aboutme h2, span.aboutme h3{
+    margin-left: 20vw;
+    justify-content: center;
+    margin-right: 20vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #487767;
+}
+span.aboutme p{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-decoration: underline;
+    text-decoration-color: #487767;
+}
+span.aboutme h2 + p{
+    padding-left: 10px;
+}
+span.aboutme td > ul > li{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: #8f3f61;
+}
+span.aboutme li > ul > li{
+    background-color: rgb(212, 187, 212);
+}
+span.aboutme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span textarea{
+    margin-left: 30vw;
+    justify-content: center;
+    margin-right: 30vw;
+}
+input[type=submit] {
+    width: 200px;
+    height: 50px;
+    background-color: #8f3f61;
+    color: white; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45vw;
+    justify-content: center;
+    margin-right: 30vw;
+}
+input[type=submit]:hover {
+   background-color:rgb(149, 5, 5);
+   color: rgb(0, 119, 255);
+}
+
+/* Phone Layout */
+@media all and (max-width: 1000px){    
+    .navBar {
+        display: flex;
+        background-color: lightblue;
+        border: 1px purple solid;
+        padding: 5px; 
+        justify-content: space-around;
+     }
+    .navBar a{
+        flex: 0 1 33%;
+        padding:10px 100px;
+        border: 1px purple solid;
+        text-decoration:none;
+        font-family: Impact, sans-serif;
+        font-weight: lighter;
+        font-size: 50px;
+        
+    }
+    .navBar a .visiting{
+        background-color: darkcyan;
+    }
+    .pageTitle > h1{
+        text-align: center;
+        font-family: Impact, sans-serif;
+        font-size: 150px;
+        margin: 20px;
+        margin-top: 100px;
+        color: blueviolet;
+        text-shadow: 10px 10px rgb(0, 0, 0);
+        
+    }
+    .pageTitle p{
+        text-align: center;
+        font-family: Impact, sans-serif;
+        font-size: 70px;
+        color: purple;
+        text-shadow: 3px 3px rgb(0, 0, 0);
+    }
+    .imageTopRight img{
+        position: fixed;
+        right: 0px; 
+        top: -20px;
+        width: 25%;
+        height: 13%;
+    }
+    div.TTTTTT p{
+        color: white;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    div.TTTTTT > ul{
+        color: white;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 50px;
+        border-radius: 15px;
+        font-size: 12px;
+    } 
+    div.TTTTTT {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 13% 15% 17% 17% 15% 13%;
+        gap: 3px;
+        border: 5px rgb(7, 4, 34) dashed;
+        grid-template-areas: 
+        "title"
+        "paraOne" 
+        "paraTwo"
+        "imgOne" 
+        "imgTwo"
+        "ulOne" 
+        "paraThree"
+        ;
+    }
+    div.music {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 22% 5% 27% 36% 20%;
+        gap: 0px;
+        border: 5px rgb(7, 4, 34) dashed;
+        grid-template-areas: 
+        "title"
+        "paraOne" 
+        "audioOne"
+        "paraTwo"
+        "paraThree" 
+        "videoOne"
+        ;
+        overflow: hidden;
+    }
+    div.music p{
+        font-size: 15px;
+    }
+    span.aboutme h2, span.aboutme h3{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: #487767;
+    }
+    span.aboutme p{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        text-decoration: underline;
+        text-decoration-color: #487767;
+    }
+    span.aboutme h2 + p{
+        padding-left: 0px;
+    }
+    span.aboutme td > ul > li{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        background-color: #8f3f61;
+    }
+    span textarea{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-size: 30px;
+        width: 100vw;
+    }
+    input[type=submit] {
+        width: 500px;
+        height: 100px;
+        background-color: #8f3f61;
+        color: white; 
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 30vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-size: 50px;
+    }
+    td > h3 {
+        font-size: 13px;
+    }
+    td > video {
+        height: 300px;
+        width: 500px;
+    }
+    table.lists td {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    table.lists th {
+        display: block;
+        width: 100vw;
+        height: auto;
+        color: black;
+    }
+    table.mainTable td {
+        display: block;
+        width: 80vw;
+        height: auto;
+        font-size: 24px;
+    }
+}
+
+/* Tablet Layout */
+@media all and (max-width: 1400px){
+    div.pageTitle h1,div.pageTitle p {
+        display: inline-block;
+    }
+    div.pageTitle h1 {
+        display: inline-block;
+        padding-left: 15vw;
+    }
+    span.aboutme h2, span.aboutme h3{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: #487767;
+    }
+    span.aboutme p{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        text-decoration: underline;
+        text-decoration-color: #487767;
+    }
+    span.aboutme h2 + p{
+        padding-left: 0px;
+    }
+    span.aboutme td > ul > li{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        background-color: #8f3f61;
+    }
+    span textarea{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+    }
+    input[type=submit] {
+        width: 200px;
+        height: 50px;
+        background-color: #8f3f61;
+        color: white; 
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 30vw;
+        justify-content: center;
+        margin-right: 0vw;
+    }
+    div.TTTTTT p{
+        color: white;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    div.TTTTTT > ul{
+        color: white;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+    } 
+    div.music p{
+        font-size: 13px;
+        padding: 2px;
+    }
+    div.TTTTTT h2.title{
+        grid-area: title;
+        background: rgb(8, 117, 90);
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        padding: 10px;
+        color: aliceblue;
+        font-family: Impact, sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    td > video {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+/* Theme Handling */
+.themeButtons {
+    text-align: center;
+    margin: auto;
+}
+.themeButtons input[type="button"] {
+    border: none;
+    font-size: 4vw;
+    padding: 2vw 3vw;
+    border-radius: 30px;
+    color: #000;
+    background-color: #ccc;
+    width: 25vw;
+}
+.themeButtons #default-button:hover {
+    background-color: #9600fa;
+    color: rgb(0, 17, 255);
+    border: solid 3px red;
+    cursor: pointer;
+}
+.themeButtons #oldschool-button:hover {
+    background-color: #ff8533;
+    color: rgb(0, 255, 242);
+    border: solid 3px rgb(255, 251, 0);
+    cursor: pointer;
+}
+.themeButtons #moshi-button:hover {
+    background-color: #d62a2a;
+    color: rgb(72, 255, 0);
+    border: solid 3px rgb(27, 27, 18);
+    cursor: pointer;
+}
+
+/** Hero Image Credit - "How TO - Hero Image" **/
+.pageTitle{
+    background-image: url(lovelycode.jpg);
+    background-position: center;
+    background-position: 50%;
+}
+

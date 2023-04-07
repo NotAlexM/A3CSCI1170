@@ -1,0 +1,554 @@
+/* Default (Desktop) Layout */
+.imageTopRight img{
+    position: fixed;
+    right: 0px; 
+    top: -20px;
+    width: 15%;
+    height: 25%;
+}
+html{
+    background-color: rgb(32, 32, 32);
+}
+a{
+    border: 2px #01ff2b dotted;
+}
+.pageTitle > h1{
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    margin: 20px;
+    margin-top: 100px;
+    color: rgb(226, 43, 67);
+    text-shadow: 10px 10px rgb(66, 66, 66);
+    
+}
+.pageTitle p{
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 25px;
+    color: rgb(0, 224, 0);
+    text-shadow: 3px 3px rgb(71, 71, 71);
+}
+.navBar {
+    display: flex;
+    background-color: rgb(99, 12, 12);
+    border: 1px rgb(0, 0, 0) solid;
+    padding: 5px; 
+    justify-content: space-around;
+ }
+.navBar a{
+    flex: 0 1 33%;
+    padding:10px 100px;
+    border: 1px rgb(4, 36, 13) solid;
+    text-decoration:none;
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    color: #000;
+    
+}
+.navBar a .visiting{
+    background-color: rgb(17, 82, 31);
+    color: #ffffff;
+}
+.footer {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: #174417;
+    border: 1px rgb(138, 1, 1) solid;
+    padding: 5px; 
+    justify-content: space-around;
+}
+.footer h2{
+    flex: 0 1 33%;
+    padding:10px 50px;
+    text-decoration:none;
+    font-family: Impact, sans-serif;
+    font-weight: lighter; 
+}
+table.lists ol{
+    font-size: larger;
+    background-color: rgba(250, 255, 252, 0.678);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*.top5{
+    background-color: black;
+    color: azure;
+}
+td.movies {
+    background-image: url("legomovie.png");
+    width: 25vw;
+}
+td.games {
+    background-image: url("minecraft.png");
+    width: 25vw;
+}
+td.artists {
+    background-image: url("twikipedia.png");
+    width: 25vw;
+}
+td.food {
+    background-image: url("spaghetti.png");
+    width: 25vw;
+}
+div.TTTTTT {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 15% 20% 30% 20%;
+    gap: 3px;
+    border: 5px rgb(7, 4, 34) dashed;
+    grid-template-areas: 
+    "title title"
+    "paraOne paraTwo"
+    "imgOne imgTwo"
+    "ulOne paraThree"
+    ;
+}
+div.TTTTTT p{
+    color: rgb(20, 20, 20);
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 15px;
+}
+div.TTTTTT p ~ p{
+    padding: 40px;
+}
+div.TTTTTT > ul{
+    color: rgb(32, 32, 32);
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 50px;
+    border-radius: 15px;
+}
+div.TTTTTT h2.title{
+    grid-area: title;
+    background: rgb(79, 199, 99);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(34, 34, 34);
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+}
+div.TTTTTT p.p1{
+    grid-area: paraOne;
+    background: rgb(160, 206, 101);
+}
+div.TTTTTT p.p2{
+    grid-area: paraTwo;
+    background: rgb(216, 113, 161);
+}
+div.TTTTTT p.p3{
+    grid-area: paraThree;
+    background: rgb(82, 161, 118);
+}
+div.TTTTTT img{
+    border-radius: 15px;
+    padding:1px;
+    margin: 1px;
+}
+img.img1{
+    grid-area: imgOne;
+    background: darkcyan;
+    width: 100%;
+    height: 100%;  
+}
+img.img2{
+    grid-area: imgTwo;
+    background: darkcyan;
+    width: 100%;
+    height: 100%;
+}
+ul.ul1{
+    grid-area: ulOne;
+    background: rgb(176, 77, 108);
+}
+div.music {
+    display: grid;
+    grid-template-columns: 30% 40% auto;
+    grid-template-rows: auto 30% 30vw;
+    gap: 3px;
+    border: 5px rgb(7, 4, 34) dashed;
+    grid-template-areas: 
+    "title title title"
+    "paraOne paraOne audioOne"
+    "paraTwo paraThree videoOne"
+    ;
+}
+div.music h2.title{
+    grid-area: title;
+    background: rgb(33, 172, 107);
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(31, 31, 31);
+    font-family: Impact, sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+}
+div.music p.p1{
+    grid-area: paraOne;
+    background: rgb(151, 230, 98);
+}
+div.music p.p2{
+    grid-area: paraTwo;
+    background: rgb(252, 95, 160);
+}
+div.music p.p3{
+    grid-area: paraThree;
+    background: rgb(231, 77, 77);
+}
+.audio1 {
+    grid-area: audioOne;
+    background: rgb(64, 54, 158);
+    width: 100%;
+    height: 100%;
+}
+.video1{
+    grid-area: videoOne;
+    background: rgb(83, 24, 106);
+    width: 100%;
+    height: 100%;
+}
+div.music p{
+    color: rgb(27, 27, 27);
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding: 30px;
+}
+table.mainTable{
+    border: 5px rgb(8, 49, 5) solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: black;
+}
+table.mainTable tr{
+    background-color: rgb(175, 83, 95);
+}
+table.mainTable tr td{
+    border: 5px rgb(15, 128, 0) solid;
+    text-shadow: 1px 1px rgb(155, 155, 155);
+    color: rgb(31, 15, 0);
+    padding: 20px;
+    border-radius: 15px;
+}
+table.mainTable tr td img{
+    border-radius: 15px;
+    padding:1px;
+    margin: 1px;
+}
+span.aboutme h2, span.aboutme h3{
+    margin-left: 20vw;
+    justify-content: center;
+    margin-right: 20vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #ce4d6d;
+}
+span.aboutme p{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-decoration: underline;
+    text-decoration-color: #255002;
+    color: #ffffff;
+}
+span.aboutme h2 + p{
+    padding-left: 10px;
+}
+span.aboutme td > ul > li{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: #33ac6a;
+}
+span.aboutme li > ul > li{
+    background-color: rgb(187, 212, 212);
+}
+span.aboutme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span textarea{
+    margin-left: 30vw;
+    justify-content: center;
+    margin-right: 30vw;
+}
+input[type=submit] {
+    width: 200px;
+    height: 50px;
+    background-color: #1a8505;
+    color: white; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45vw;
+    justify-content: center;
+    margin-right: 30vw;
+}
+input[type=submit]:hover {
+   background-color:rgb(255, 18, 223);
+   color: rgb(60, 255, 0);
+}
+
+/* Phone Layout */
+@media all and (max-width: 1000px){    
+    .navBar {
+        display: flex;
+        padding: 5px; 
+        justify-content: space-around;
+     }
+    .navBar a{
+        flex: 0 1 33%;
+        padding:10px 100px;
+        text-decoration:none;
+        font-family: Impact, sans-serif;
+        font-weight: lighter;
+        font-size: 50px;
+        
+    }
+    .pageTitle > h1{
+        text-align: center;
+        font-family: Impact, sans-serif;
+        font-size: 150px;
+        margin: 20px;
+        margin-top: 100px;
+        
+    }
+    .pageTitle p{
+        text-align: center;
+        font-family: Impact, sans-serif;
+        font-size: 70px;
+    }
+    .imageTopRight img{
+        position: fixed;
+        right: 0px; 
+        top: -20px;
+        width: 25%;
+        height: 13%;
+    }
+    div.TTTTTT p{
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    div.TTTTTT > ul{
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 50px;
+        border-radius: 15px;
+        font-size: 12px;
+    } 
+    div.TTTTTT {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 13% 15% 17% 17% 15% 13%;
+        gap: 3px;
+        grid-template-areas: 
+        "title"
+        "paraOne" 
+        "paraTwo"
+        "imgOne" 
+        "imgTwo"
+        "ulOne" 
+        "paraThree"
+        ;
+    }
+    div.music {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 22% 5% 27% 36% 20%;
+        gap: 0px;
+        grid-template-areas: 
+        "title"
+        "paraOne" 
+        "audioOne"
+        "paraTwo"
+        "paraThree" 
+        "videoOne"
+        ;
+        overflow: hidden;
+    }
+    div.music p{
+        font-size: 15px;
+    }
+    span.aboutme h2, span.aboutme h3{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    span.aboutme p{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        text-decoration: underline;
+    }
+    span.aboutme h2 + p{
+        padding-left: 0px;
+    }
+    span.aboutme td > ul > li{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    span textarea{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-size: 30px;
+        width: 100vw;
+    }
+    input[type=submit] {
+        width: 500px;
+        height: 100px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 30vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-size: 50px;
+    }
+    td > h3 {
+        font-size: 13px;
+    }
+    td > video {
+        height: 300px;
+        width: 500px;
+    }
+    table.lists td {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    table.lists th {
+        display: block;
+        width: 100vw;
+        height: auto;
+    }
+    table.mainTable td {
+        display: block;
+        width: 80vw;
+        height: auto;
+        font-size: 24px;
+    }
+}
+
+/* Tablet Layout */
+@media all and (max-width: 1400px){
+    div.pageTitle h1,div.pageTitle p {
+        display: inline-block;
+    }
+    div.pageTitle h1 {
+        display: inline-block;
+        padding-left: 15vw;
+    }
+    span.aboutme h2, span.aboutme h3{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    span.aboutme p{
+        margin-left: 0vw;
+        margin-right: 0vw;
+        text-decoration: underline;
+    }
+    span.aboutme h2 + p{
+        padding-left: 0px;
+    }
+    span.aboutme td > ul > li{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    span textarea{
+        margin-left: 0vw;
+        justify-content: center;
+        margin-right: 0vw;
+    }
+    input[type=submit] {
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 30vw;
+        justify-content: center;
+        margin-right: 0vw;
+    }
+    div.TTTTTT p{
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    div.TTTTTT > ul{
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        padding: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+    } 
+    div.music p{
+        font-size: 13px;
+        padding: 2px;
+    }
+    div.TTTTTT h2.title{
+        grid-area: title;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        padding: 10px;
+        font-family: Impact, sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    td > video {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+/* Theme Handling */
+.themeButtons {
+    text-align: center;
+    margin: auto;
+}
+.themeButtons input[type="button"] {
+    border: none;
+    font-size: 4vw;
+    padding: 2vw 3vw;
+    border-radius: 30px;
+    color: #000;
+    background-color: #ccc;
+    width: 25vw;
+}
+.themeButtons #default-button:hover {
+    background-color: #9600fa;
+    color: rgb(0, 17, 255);
+    border: solid 3px red;
+    cursor: pointer;
+}
+.themeButtons #oldschool-button:hover {
+    background-color: #ff8533;
+    color: rgb(0, 255, 242);
+    border: solid 3px rgb(255, 251, 0);
+    cursor: pointer;
+}
+.themeButtons #moshi-button:hover {
+    background-color: #d62a2a;
+    color: rgb(72, 255, 0);
+    border: solid 3px rgb(27, 27, 18);
+    cursor: pointer;
+}
+
+/** Hero Image Credit - "How TO - Hero Image" **/
+.pageTitle{
+    background-image: url(lovelycode.jpg);
+    background-position: center;
+    background-position: 50%;
+}
