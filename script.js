@@ -13,7 +13,7 @@ function changeStyle(newSheet) {
 }
 //I learned how to use local storage to store the theme from "Build Your Own THEME SELECTOR with JavaScript & CSS", link in README.txt
 
-changeStyle(localStorage.getItem("style" || "styles.css"))
+changeStyle(localStorage.getItem("style") || "styles.css")
 
 //Defining Buttons
 const defaultThemeButton = document.getElementById('default-button');
